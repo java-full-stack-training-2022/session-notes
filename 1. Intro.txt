@@ -1,0 +1,24 @@
+Full Stack development
+---------------------------
+
+1) a front end application - angular 2+ framework
+				- ReactJS library
+2) a back end application - java with spring framework
+				- node js, express js (Javascript)
+3) a DB - Postgres ( Oracle, MySQl, SQLServer )
+
+4) Devops
+	 Version Control System - Git ( Bitbucket)
+	 Build tool - maven (gradle, ANT)
+	 Automation server for CI/CD - jenkins (bamboo, AWS - Codepipeline)
+	 Containerization - Docker
+	 Cloud Services
+			
+softwares to be installed now
+------------------------------
+github account to be created
+install git in laptop
+install java 11
+install eclipse ide (intergrated development environment) - 
+	Eclipse IDE for Enterprise Java Developers (includes Incubating components)
+	Version: 2020-12 (4.18.0)
