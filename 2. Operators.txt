@@ -1,0 +1,75 @@
+Project details - Project 1
+
+Operators
+---------
+1) Arithmetic operators
+	+ - / * %
+
+2) Assignment operator
+	=
+
+3) Arithmetic Assignment operators
+	=+ -+ /+ *= %=
+
+	eg:
+		int a = 30;
+		a = a + 5; // a += 5;
+
+4) Relational Operator
+	- returns boolean
+	< > <= >= != == 
+
+5) Logical operator
+	&& (AND) , || (OR) ,  ! (NOT)
+
+6) bitwise operators
+	- these operators work on the bits of the number
+
+	& (AND) , | (OR) , <<(left shift) , >>(right shift) , >>>(unsigned right shift operator)
+
+	int num = 2;
+	int ans = num<<3;
+	
+	0000 0000 0000 0010
+	0000 0000 0000 0100 - 1st shift
+	0000 0000 0000 1000 - 2nd shift
+	0000 0000 0001 0000 - 3rd shift
+	
+	ans = 32
+	
+	int m = 6 & 8;
+
+	-- find out what is short circuited logical operators and how is it different from logical operators ?
+
+an other categorization of operators
+---------------------------------------
+2 + 3
+2 and 3 are operands
++ is operator
+
+1) unary operator
+	- one operator and one operand
+	- eg: increment/ decrements operators - ++/--
+	int mark = 50;
+	mark++; // mark = mark + 1;
+	System.out.println(mark); //----->52
+	- post inc/post dec/ pre inc pre dec 
+	- post increment - mark++
+	- pre increment - ++mark
+	
+	-- find the difference between post and pre increment
+
+2) binary operator
+	- one operator and two operands
+	- 2 + 3
+
+3) ternary operator(conditional operator)
+	- two operators and 3 operands
+	eg:
+	int n1 = 50;
+	int n2 = 70;
+	int bigger = n1>n2?n1:n2;
+
+Git
+
+

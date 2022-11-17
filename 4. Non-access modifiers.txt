@@ -1,0 +1,45 @@
+access modifiers
+----------------
+1) public
+2) protected
+3) default/no-modifier
+4) private
+
+non access modifiers
+--------------------
+1) final
+	- in front of a variable
+		- the variable acts like a constant
+			final double PI = 3.14;
+			final int MIN_AGE = 18;
+			PI = 3.15; // not possible
+			System.out.println(PI); // possible
+	- naming convention - all caps seperated with under score
+
+	- in front of a method
+		- stops method overriding
+		
+	- in front of a class
+		- stops inheritence
+		- we cannot extend a final class
+		- in other words final classes can have no sub classes
+
+  a) can a class be abstract and final? - no
+  b) can I use final keyword in front of a local variable? - yes
+
+2) static
+	
+3) native
+	- in front of a method
+		- these are methods writtern in a language other than java, mostly c/c++
+4) abstract
+	- in front of a class
+		- we cannot create an object of this class	
+	- in front of a method
+		- this method is declared and has no body/definition
+5) synchronized
+	- in front of a method
+	- synchronized block
+
+6) transient
+	- in front of a member variable

@@ -1,0 +1,55 @@
+Encapsulation - hiding of data
+Abstraction - highligting of data
+
+we acheive abstarction through abstract classes and interfaces
+
+what is an abstract class?
+
+
+class
+------
+	1. variables
+	2. constructor
+	3. public getters/setters
+	4. methods - these methods have the body defined
+	5. abtsract methods - 
+			-these methods do not have a method body - { }, 
+			-they are declared, 
+			-the method's signature  ends with a ;
+			-these methods should have the abstract keyword in front
+			-if a class has atleast one abstract method, the class in turn becomes abstract
+			- we cannot create objects for abstract classes	
+			- they are called incomplete classes
+			- abstract classes are meant to be inherited
+			- the class that extends an abstract and provides the definition for the abtsract method is called the concrete/complete class
+
+interface
+---------
+	- interfaces were pure abstract classes 
+		- all methods are public abstract by default 
+		- all variables are public static final by default
+		- this was until java 8
+	- after java 8 , an interface can contain
+		- public abstract methods
+		- public static final variables
+		- default methods - these are methods with body
+		- static methods - these are also static methods with body
+	- we cannot create objects for interfaces
+	- interfaces are meant to be implemented by a class
+		
+abstract classes they provide IS-A relation, inheritence
+interfaces do not provide IS-A relation
+
+interface are meant to be implemented
+they are a contract to the class
+
+class ----extends----> class
+class ----implements----> interface, interface, interface...
+interface ----extends----> interface, interface, interface....
+interface ----not possible-----> class
+
+java was full of object oriented programming
+
+functional programming
+			
+classes are abstracted through interfaces
