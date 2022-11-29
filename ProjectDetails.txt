@@ -1,0 +1,60 @@
+Product Management System
+--------------------------
+
+console based application
+
+productId
+productName
+productDescription
+productCost
+productImageUrl
+
+CRUD operation
+---------------
+C - Create
+R - Read
+U - Update
+D - Delete
+
+
+add to the Database - C
+Delete from the database - D
+update in the database - U
+fetch all the products - R
+fetch a product - R
+
+
+input , process, output
+
+GOF - Gang Of Four - Design patterns
+Seperation of Concerns
+
+3 layer architecture
+---------------------
+Presention layer - input/output
+		 - input through Scanner
+		 - output through System.out.println
+
+Service layer - process
+
+DAO(Data Access Object) layer - database interaction
+
+
+presentation layer ------> service layer -----------> dao layer
+
+dao layer ------------> service layer ----------->presentation layer
+
+
+POJO - Plain Old Java Object, TO - Transfer Object, VO - Value Object
+
+class ProductPojo{
+	private int productId;
+	private String productName;
+	private String productDescription;
+	private int productCost;
+	private String productImageUrl;	
+	// constructors
+	// public getters/setters
+	// equals and hashcode
+	// toString
+}
