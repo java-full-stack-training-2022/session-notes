@@ -1,0 +1,34 @@
+array
+-----
+1. array size is fixed
+
+collection
+-----------
+1. collections will grow/shrink according to objects being added or removed
+
+
+List
+----
+1. List is indexed
+2. List is ordered, the objects are in the same order in which we add them
+3. List allows duplicate values
+
+Set
+----
+1. Set is not indexed
+2. Set maintains random order
+3. Set does not allow duplicate values
+
+with autoboxing concept primitives will be converted to equivalent wrapper classes automatically and vice versa
+
+byte		Byte
+short		Short
+int		Integer
+long		Long
+
+float		Float
+double		Double
+
+char		Character
+
+boolean 	Boolean
