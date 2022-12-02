@@ -19,6 +19,23 @@ Set
 2. Set maintains random order
 3. Set does not allow duplicate values
 
+SortedSet
+---------
+1. Similar to Set
+2. the objects in the collected and sorted when added to it
+
+Map
+----
+1. Map hold a key and a value
+2. The key cannot be duplicate
+3. the value can be duplicated
+
+SortedMap
+----------
+1. Similar to Map
+2. The key/ values are added in sorted order of the key
+
+
 with autoboxing concept primitives will be converted to equivalent wrapper classes automatically and vice versa
 
 byte		Byte
