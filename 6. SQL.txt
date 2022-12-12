@@ -15,7 +15,7 @@ list the available tables in a database
  
 create a database
 -------------------
-	create database <database_name>
+	create database <database_name>;
 
 
 SQL - Structured Query Language
@@ -24,17 +24,75 @@ SQL - Structured Query Language
 5 categories
 ------------
 1. DDL - Data Definition Language
+	- this deals with the structure of the table 	
+	- create a table - CREATE
+	- delete a table - DROP
+	- modify a table - ALTER
+	- rename a table - RENAME
+	- TRUNCATE
 
 2. DML - Data Manipulation Language
+	- this deals with the records/data of the table
+	- add a record - INSERT
+	- update a record - UPDATE
+	- remove a record - DELETE
 
 3. DQL - Data Querying Language
+	- this deals with fetching of records from the table
+	- SELECT <project columns>
+		FROM <table_name>
+		WHERE <condn>
+		GROUP BY <column list>
+		HAVING <condn>
+		ORDER BY <column list>
 
 4. TCL - Transaction Control Language
+	- deals with transactions and makes sure ACID properties are met
+	- COMMIT , ROLLBACK
 
 5. DCL - Data Control Language
+	- deals with granting and revoking priveliges to users
+	- GRANT, REVOKE
 
 
 Normalization
 ACID properties - Transaction
 contraints - primary key, foreign key
 relation mapping
+
+
+CLI - Command Line Interface - psql
+GUI - Graphical User Interface - pgadmin(comes with postgres installation)  , DBeaver(seperate installation)
+
+
+Contraints can be added in 2 ways
+1) Column level
+	here the constraint is specified beside the columns data type
+
+	CREATE TABLE product_table(product_id INT PRIMARY KEY, 
+					product_name VARCHAR(50), 
+					product_description VARCHAR(150), 
+					product_cost INT, 
+					product_image_url VARCHAR(255));
+
+2) Table level
+	here the constraint is pecified at the end after all the columns are specified
+
+	CREATE TABLE product_table(product_id INT, 
+					product_name VARCHAR(50), 
+					product_description VARCHAR(150), 	
+					product_cost INT, 
+					product_image_url VARCHAR(255), 
+					CONSTRAINT pk_product_id PRIMARY KEY(product_id));
+
+
+functions - 2 types
+---------
+
+1. scalar functions
+	- they work on the individual data of the columns
+	- Eg: UPPER(), LOWER() etc
+
+2. aggregate functions
+	- they work all the data of the column and display one output
+	- SUM(), AVG(), MIN(), MAX() , COUNT() etc.
